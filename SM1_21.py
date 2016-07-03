@@ -95,3 +95,6 @@ class SM1_21:
         self.printer.write('\x1d\x2f\x00')
         self.printer.write('\n' * 3)
 
+if __name__ == '__main__':
+    p = SM1_21(port='/dev/tty.SM1-21-SerialPortDevB')
+    p.image('1327.jpg')
